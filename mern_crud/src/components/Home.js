@@ -37,7 +37,7 @@ export default function Home() {
 
   const deleteuser = async (id) => {
     
-    const res2 = await fetch(`/deleteuser/${id}`, {
+    const res2 = await fetch(`https://sample-mern-stack.azurewebsites.net/deleteuser/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
