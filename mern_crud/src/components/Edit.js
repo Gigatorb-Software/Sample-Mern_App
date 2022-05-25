@@ -29,7 +29,7 @@ const Edit = () => {
 
     return (
         <div className="container">
-            <NavLink to="https://sample-mern-stack.azurewebsites.net/">home2</NavLink>
+            <NavLink to="/">home2</NavLink>
             <form className="mt-4">
                 <div className="row">
                     <div class="mb-3 col-lg-6 col-md-6 col-12">

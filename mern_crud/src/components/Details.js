@@ -19,7 +19,7 @@ const Details = () => {
             <div sx={{ maxWidth: 600 }}>
                 <div>
                     <div className="add_btn">
-                        <NavLink to={`https://sample-mern-stack.azurewebsites.net/edit/1`}>  <button className="btn btn-primary mx-2"></button></NavLink>
+                        <NavLink to={`/edit/1`}>  <button className="btn btn-primary mx-2"></button></NavLink>
                         <button className="btn btn-danger"></button>
                     </div>
                     <div className="row">
