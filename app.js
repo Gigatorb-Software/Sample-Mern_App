@@ -18,6 +18,15 @@ app.use(cors());
 app.get("/",(req,res)=>{
     res.json("server start")
 })
+
+
+app.use(express.static('./client/build'));
+
+app.use('/', require('./routes/router.js'))
+
+app.get("*", (req, res) => { //our GET route needs to point to the index.html in our build
+    res.sendFile(path.resolve(__dirname, "mern_crud", "build", "index.html"));
+  });
 app.use(router);
 //app.use(express.static('.mern_crud/build'));
 
