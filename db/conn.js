@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB = "mongodb+srv://mern-user:giga-password@cluster0.9hudl.mongodb.net/comments?retryWrites=true&w=majority"
+const DB = process.env.DATABASE
 
 
 mongoose.connect(DB,{

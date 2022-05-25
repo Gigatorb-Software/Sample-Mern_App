@@ -5,7 +5,7 @@ const Register = () => {
 
     // const { udata, setUdata } = useContext(adddata);
 
-    // const history = useHistory();
+     const history = useHistory();
     const [inpval, setINP] = useState({
         name: "",
         email: "",
@@ -51,7 +51,10 @@ const Register = () => {
             console.log("error ");
             alert("error");
 
-        } 
+        } else {
+            history.push("/");   
+
+        }
     }
   return (
     <div className="container">
@@ -86,8 +89,8 @@ const Register = () => {
                         <label for="exampleInputPassword1" class="form-label">Description</label>
                         <textarea name="desc" value={inpval.desc} onChange={setdata} className="form-control" id="" cols="30" rows="5"></textarea>
                     </div>
-
                     <button type="submit" onClick={addinpdata} class="btn btn-primary">Submit</button>
+                    
                 </div>
             </form>
         </div>
